@@ -1,0 +1,17 @@
+package Seminars.Lesson_02.Zoo.Herbivores;
+
+import Seminars.Lesson_02.Zoo.Animal;
+
+public abstract class Herbivores extends Animal {
+
+    
+    public Herbivores(String name) {
+        super(name);
+    }
+
+    @Override
+    public String feed() {
+        return "grass";
+    }
+    }
+    

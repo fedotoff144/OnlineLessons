@@ -1,0 +1,15 @@
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/bin/Debug/net6.0/SecondLesson
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/bin/Debug/net6.0/SecondLesson.deps.json
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/bin/Debug/net6.0/SecondLesson.runtimeconfig.json
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/bin/Debug/net6.0/SecondLesson.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/bin/Debug/net6.0/SecondLesson.pdb
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.csproj.AssemblyReference.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.GeneratedMSBuildEditorConfig.editorconfig
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.AssemblyInfoInputs.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.AssemblyInfo.cs
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.csproj.CoreCompileInputs.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/refint/SecondLesson.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.pdb
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/SecondLesson.genruntimeconfig.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/SecondLesson/obj/Debug/net6.0/ref/SecondLesson.dll

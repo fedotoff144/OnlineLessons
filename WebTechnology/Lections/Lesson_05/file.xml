@@ -1,0 +1,33 @@
+<?xml version="1.0"  директива
+<bibliography>
+    <book> <!--Информацияпо одной книге-->
+        <title> Исползование символа &amp; в гипертекстах</title>    &amp; ссылка на символ
+        <author>Megan Fox</author>
+        <keywords><![CDATA[символ,гипертекст,&]]></keywords>   section CDATA
+    </book>
+</bibliography>
+
+<party typre="PRIVATE" sourceSystem="AL" rawId="2">
+    <field name="name">Ленинградский</field>
+    <attribute type="NUMBER" rawId="AL.2.PH.1">
+        <field name="type">NUMBER</field>
+        <field name="house">43</field>
+    </attribute>
+</party>
+
+<wrap:doRegister>
+    <email>alex@gmail.com</email>
+    <name>Alex</name>
+    <password>qwerty</password>
+</wrap:doRegister>
+
+XSD-scheme будет выглядеть так
+<xs:element name="doRegister">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="password" type="xs:string"/>
+    </xs:sequence>
+    </xs:complexType>
+</xs:element>

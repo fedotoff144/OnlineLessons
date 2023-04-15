@@ -1,0 +1,44 @@
+- Создать два произвольных файла. 
+touch file1
+cat > file2
+"some text"
+Ctrl+D
+
+- Первому присвоить права на чтение и запись для владельца и группы, только на чтение — для всех. 
+sudo chmod u=rw,g=rw,o=r file1
+sudo chmod 664 file1
+
+- Второму присвоить права на чтение и запись только для владельца.
+sudo chmod u=rw,g=,o= file2
+sudo chmod 600 file2
+
+
+- Назначить новых владельца и группу для директории целиком.
+sudo chown -R testuser:testgroup /home/usr/test/chfolder
+
+- создать пользователя, используя утилиту useradd и adduser;
+sudo useradd -s /bin/bash -m -d /home/testuser testuser
+sudo adduser testuser2
+вводим пароль, имя и доп информацию
+
+- удалить пользователя, используя утилиту userdel.
+sudo userdel testuser2
+
+- создать группу с использованием утилит groupadd и addgroup;
+sudo addgroup testgroup2
+sudo addgroup testgroup3
+
+- попрактиковаться в смене групп у пользователей;
+sudo usermod -g testgroup2 testuser
+
+- добавить пользователя в группу, не меняя основной;
+sudo usermod -aG testgroup testuser
+ 
+- Сделать так, чтобы sudo не требовал пароль для выполнения команд.
+открыть файл командой
+sudo visudo
+найти и заменить строчку
+%sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+
+- Создать директорию, в которой есть несколько файлов. Сделать так, чтобы открыть файлы можно было, только зная имя файла, а через ls список файлов посмотреть было нельзя.
+sudo chmod -r testfolder

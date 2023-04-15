@@ -1,0 +1,15 @@
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.csproj.AssemblyReference.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.GeneratedMSBuildEditorConfig.editorconfig
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.AssemblyInfoInputs.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.AssemblyInfo.cs
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.csproj.CoreCompileInputs.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/bin/Debug/net6.0/ThirdLesson
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/bin/Debug/net6.0/ThirdLesson.deps.json
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/bin/Debug/net6.0/ThirdLesson.runtimeconfig.json
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/bin/Debug/net6.0/ThirdLesson.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/bin/Debug/net6.0/ThirdLesson.pdb
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/refint/ThirdLesson.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.pdb
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ThirdLesson.genruntimeconfig.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/ThirdLesson/obj/Debug/net6.0/ref/ThirdLesson.dll

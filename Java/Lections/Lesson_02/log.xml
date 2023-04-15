@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-01-25T13:28:01.429811207Z</date>
+  <millis>1674653281429</millis>
+  <nanos>811207</nanos>
+  <sequence>2</sequence>
+  <logger>file_04</logger>
+  <level>WARNING</level>
+  <class>file_04</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Test 1</message>
+</record>
+<record>
+  <date>2023-01-25T13:28:01.433868833Z</date>
+  <millis>1674653281433</millis>
+  <nanos>868833</nanos>
+  <sequence>3</sequence>
+  <logger>file_04</logger>
+  <level>INFO</level>
+  <class>file_04</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Test 2</message>
+</record>
+</log>

@@ -1,0 +1,15 @@
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.csproj.AssemblyReference.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.GeneratedMSBuildEditorConfig.editorconfig
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.AssemblyInfoInputs.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.AssemblyInfo.cs
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.csproj.CoreCompileInputs.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/bin/Debug/net6.0/Task031
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/bin/Debug/net6.0/Task031.deps.json
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/bin/Debug/net6.0/Task031.runtimeconfig.json
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/bin/Debug/net6.0/Task031.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/bin/Debug/net6.0/Task031.pdb
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/refint/Task031.dll
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.pdb
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/Task031.genruntimeconfig.cache
+/home/artemfedotov/Загрузки/HomeWork/Seminars/FourthLesson/Task031/obj/Debug/net6.0/ref/Task031.dll

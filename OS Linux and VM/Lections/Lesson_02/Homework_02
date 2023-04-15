@@ -1,0 +1,38 @@
+cat > newfile
+"enter some text"
+Ctrl+D
+cp newfile newfile2
+ll
+cat newfile newfile2 > newfile_all
+cat newfile_all
+mv newfile_all file_all
+
+cat > 1file
+touch 2file
+mkdir newtestdirect
+pwd (/home/usr/newdirect)
+mv 1file /home/usr/newdirect
+mv 2file /home/usr/newdirect
+rm -rf newdirect
+
+cat > file1
+"some text"
+Ctrl+D
+cp file1 file2
+ln -s file1 file3
+ln file4 file1_ln
+(айноды у этих файлов file4 file1 стали равны 2)
+rm file1
+cat file3
+(cat: file3: Нет такого файла или каталога)
+cat file4
+(some text)
+
+mv file2 file2rnm
+mv file3 file3rnm
+mv file4 file4rnm
+ln -s file3rnm file3_ln
+mv file3_ln /home/usr/test4
+(ссылка стала грустной)
+
+

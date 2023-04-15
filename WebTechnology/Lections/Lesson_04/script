@@ -1,0 +1,53 @@
+<?php //php 7.2.24
+    echo "Hello, world!"
+?>
+<?php 
+    echo 'Output';
+    echo 'in';
+    echo 'oneline';
+?>
+<?php
+    # this is comment
+    echo 'This code';
+    // this is comment too
+    echo 'And this code';
+?>
+<?php
+    $name = 'Alex';
+    echo $name;
+?>
+<?php 
+    $name = 'Alex';
+    $bool = true;
+    $num = 15.25;
+    echo "Hi, $name";
+    echo "This is bool $bool";
+    echo "This is float $num";
+?>
+<?php 
+    echo 6 + 5;
+    echo 7 - 2;
+    echo 3 * 2;
+    echo 10 / 2;
+    echo 7 % 2;
+    $var = 3 + 5;
+    echo $var;
+?>
+<?php
+    class User {
+        public $name;
+        public $date;
+
+        public function show()
+        {
+            echo $this->name, ' ', $this->date;
+        }
+    }
+    $alex = new User;
+    $alex->name = 'Alex';
+    $alex->date = 10;
+    $alex->show(); // Alex 10
+?>
+<?php
+
+?>
