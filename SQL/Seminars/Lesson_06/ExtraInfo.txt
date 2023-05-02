@@ -6,8 +6,10 @@ ACID, который был обрезан в формате записи: https
 Если кому-то нужны были NoSQL БД, обращайтесь в личку, есть презентации на этот счет из другого моего курса.
 Прикладываю ссылки на статью по NoSQL (ее хватит для минимального представления):
 https://highload.today/blogs/kak-organizovat-dannye-v-prilozhenii-nosql-podhody-v-relyatsionnyh-bazah-dannyh/#2
+
 Так же материалы для NoSQL:
 Какую СУД выбрать: SQL или NoSQL: https://habr.com/ru/company/ruvds/blog/324936/
+
 Хорошая лекция о NoSQL: https://habr.com/ru/company/oleg-bunin/blog/319052/
 https://javarush.ru/groups/posts/467-rukovodstvo-po-nosql-dlja-razrabotchikov-
 http://spring-projects.ru/understanding/nosql/
@@ -16,11 +18,13 @@ https://inviqa.com/blog/storing-graphs-database-sql-meets-social-network
 
 https://inviqa.com/blog/storing-graphs-database-sql-meets-social-network
 Про Discord: https://habr.com/ru/post/323694/
+
 Подключение к БД(.NET Core 3), если кому-то интересно:
 PostgreSQL:
 https://www.npgsql.org/
 https://docs.microsoft.com/en-us/azure/postgresql/connect-csharp
 http://zetcode.com/csharp/postgresql/
+
 MySQL:
 https://dev.mysql.com/doc/connector-net/en/
 https://mysqlconnector.net/
