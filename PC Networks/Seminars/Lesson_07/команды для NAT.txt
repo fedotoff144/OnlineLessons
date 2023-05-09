@@ -35,7 +35,7 @@ ip nat inside source static tcp 10.0.0.100 80 6.6.6.1 80
 Здесь мы задаем статическую трансляцию 6.6.6.1:443 уже в 10.0.0.101:443
 ip nat inside source static tcp 10.0.0.101 443 6.6.6.1 443 
 !
-Команда для просмотра NAT:
+Команда для просмотра NAT трансляции:
 show ip nat translations
 Команда для удаления динамических записей в NAT:
 clear ip nat translation *
