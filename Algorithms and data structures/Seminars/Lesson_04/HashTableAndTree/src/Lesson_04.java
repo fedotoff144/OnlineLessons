@@ -1,21 +1,23 @@
 public class Lesson_04 {
-    public class HashMap{
-        private class Entity{
+    public static class HashMap {
+        private static class Entity {
             int Key;
             int Value;
         }
-        private class Basket{
+
+        private static class Basket {
             Node Head;
-            private class Node{
+
+            private static class Node {
                 Entity entity;
                 Node next;
             }
 
-            Entity find(int Key){
+            Entity find(int Key) {
                 Node current = Head;
-                if(Head != null){
-                    while (current != null){
-                        if(current.entity.Key == Key){
+                if (Head != null) {
+                    while (current != null) {
+                        if (current.entity.Key == Key) {
                             return current.entity;
                         }
                         current = current.next;
@@ -24,16 +26,16 @@ public class Lesson_04 {
                 return null;
             }
 
-            private boolean push(Entity entity){
+            private boolean push(Entity entity) {
                 Node node = new Node();
                 node.entity = entity;
 
                 Node current = Head;
-                while(current != null){
-                    if(current.entity == entity){
+                while (current != null) {
+                    if (current.entity == entity) {
                         return false;
                     }
-                    if(current.next == null){
+                    if (current.next == null) {
                         current.next = node;
                         return true;
                     }
@@ -43,13 +45,13 @@ public class Lesson_04 {
                 return true;
             }
 
-            private boolean del(int Key){
+            private boolean del(int Key) {
                 Node current = Head;
-                while(current != null){
-                    if(current.next.entity.Key == Key){
-                        if(current.next != null) {
+                while (current != null) {
+                    if (current.next.entity.Key == Key) {
+                        if (current.next != null) {
                             current.next = current.next.next;
-                        }else{
+                        } else {
                             current.next = null;
                         }
                         return true;
@@ -59,11 +61,12 @@ public class Lesson_04 {
                 return false;
             }
         }
+
         private static final int INIT_SIZE = 16;
         private static final int Size = 0;
         private static final double LOAD_FACTOR = 0.75;
 
-        private Basket baskets[];
+        private final Basket[] baskets;
 
         public HashMap() {
             this(INIT_SIZE);
@@ -73,21 +76,21 @@ public class Lesson_04 {
             baskets = new Basket[size];
         }
 
-        int calcIndex(int Key){
+        int calcIndex(int Key) {
             return Key % baskets.length;
         }
 
-        public Entity find(int Key){
+        public Entity find(int Key) {
             int index = calcIndex(Key);
             Basket basket = baskets[index];
 
-            if(basket != null){
+            if (basket != null) {
                 return basket.find(Key);
             }
             return null;
         }
 
-        public void push(int Key, int Value){
+        public void push(int Key, int Value) {
             int index = calcIndex(Key);
             Basket basket = baskets[index];
 
@@ -95,7 +98,7 @@ public class Lesson_04 {
             entity.Value = Value;
             entity.Key = Key;
 
-            if(basket == null){
+            if (basket == null) {
                 basket = new Basket();
                 baskets[index] = basket;
             }
@@ -104,58 +107,59 @@ public class Lesson_04 {
 
         }
 
-        public void del(int Key){
+        public void del(int Key) {
             int index = calcIndex(Key);
             Basket basket = baskets[index];
 
-            if(basket != null){
+            if (basket != null) {
                 basket.del(Key);
             }
         }
     }
 
-    public class BinaryTree{
+    public static class BinaryTree {
         Node Root;
-        private class Node{
+
+        private static class Node {
             int Value;
             Node Left;
             Node Right;
         }
 
-        public boolean find(int Value){
+        public boolean find(int Value) {
             Node current = Root;
-            while(current != null){
-                if(current.Value == Value)
+            while (current != null) {
+                if (current.Value == Value)
                     return true;
 
-                if(Value < current.Value){
+                if (Value < current.Value) {
                     current = current.Left;
-                }else{
+                } else {
                     current = current.Right;
                 }
             }
             return false;
         }
 
-        public void push(int Value){
+        public void push(int Value) {
             Node node = new Node();
             node.Value = Value;
-            if(Root == null){
+            if (Root == null) {
                 Root = node;
-            }else {
+            } else {
                 Node current = Root;
 
                 while (current != null) {
                     if (Value < current.Value) {
-                        if(current.Left == null){
+                        if (current.Left == null) {
                             current.Left = node;
-                            return ;
+                            return;
                         }
                         current = current.Left;
                     } else {
-                        if(current.Right == null){
+                        if (current.Right == null) {
                             current.Right = node;
-                            return ;
+                            return;
                         }
                         current = current.Right;
                     }
@@ -164,6 +168,7 @@ public class Lesson_04 {
             }
         }
     }
+
     public static void main(String[] args) {
 
     }
