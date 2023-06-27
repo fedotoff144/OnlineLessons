@@ -1,0 +1,48 @@
+***INSTALL DOCKER***
+https://docs.docker.com/engine/install/ubuntu/
+
+-for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
+
+-sudo apt-get update
+-sudo apt-get install ca-certificates curl gnupg
+
+-sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+-echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+-sudo apt-get update
+
+-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+-sudo docker run hello-world
+
+
+-sudo docker pull ubuntu		-установка образа
+-sudo docker pull ubuntu:18.04		-установка определенной версии образа
+-docker images				-просмотр всех образов
+-sudo docker rmi ubuntu:18.04		-удаление образа по имени
+-sudo docker rmi $(docker images -aq)	-удаление образов
+-sudo docker rmi $(docker images -aq) --force	-принудительное удаление образов
+-sudo docker ps -a			-просмотр контейнеров доступных в системе
+-sudo docker run -it ubuntu bash	-it интерактивный режим запускаем bash в котнейнере ubuntu
+					входим в контейнер root@a61300ca1712:/#
+-sudo docker run -it ubuntu date	-запуск времени
+-sudo docker run --publish 8080:80 nginx	-запуск nginx
+-sudo docker run --publish 8080:80 nginx -d	-запуск nginx в режиме демона(в фоне)
+-sudo curl127.0.0.1:8080		-проверка запущен ли контейнер, если есть доступ то работает
+-sudo docker ps -a			-просмотр контейнеров
+-sudo docker start GB(name of conteiner)	-запуск контейнера по имени 
+						(если нет никакой задачи на выполнение, то контейнер тут же остановится)
+-sudo docker run ubuntu sleep 1200	-запуск задачи в контейнере
+-sudo docker rm GB(name of conteiner)	-удаление контейнера по имени
+-sudo rm $(docker ps -a -q)		-удаление всех контейнеров
+-sudo docker ps -q			-вывод id толькозапущенных контейнеров
+-sudo docker ps -a -q			-вывод id всех контейнров доступных в системе
+-sudo docker stop a3jrw4kj5b23kj(id conteiner)	-остановка контейнера по его id
+-sudo docker system df			-просмотр занятогот места на диске
+-sudo docker system prune -af		-очистка места от образов
