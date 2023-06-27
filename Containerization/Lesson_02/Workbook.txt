@@ -29,6 +29,7 @@ cat blkio.weight
 *cat /sys/fs/cgroup/mytestgroup/memory.max	-просмотр значения в файле memory.max
 *cat /sys/fs/cgroup/mytestgroup/cpu.max		-просмотр значения в файле cpu.max
 *cgexec -g memory:mytestgroup bash		-заходим в программу с ограничениями от cgroup
+*exit						-выходим из режима
 *sudo apt install lxc debootstrap bridge-utils lxc-templates	-установка интсрумента lxc
 *sudo lxc-create -n test-0 -t ubuntu		-исполняяем команду lxc create. качается имейдж и кладется в тест-0
 
@@ -39,9 +40,9 @@ cat blkio.weight
 
 *sudo lxc-start -n test-0	-запускаем контейнер и следим за ошибками
 *sudo lxc-attach -n test-0	-заходим внутрь контейнера
-*top	-смотрим список запущенных процессов изолированного контейнера
+*top			-смотрим список запущенных процессов изолированного контейнера
 *free -m		-просмотр доступной оперативной памяти контейнера
-*exit	-выходим из контейнера в рут
+*exit			-выходим из контейнера в рут
 *free -m		-просмотр доступной оперативной памяти системы рут столько де как и у контейнера)
 *sudo lxc-cgroup -n test-0 memory.max 256M	-задаем ограничение на потребление памяти в 256Мб
 *sudo lxc-attach -n test-0	-заходим внутрь контейнера
