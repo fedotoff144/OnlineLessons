@@ -30,7 +30,10 @@ sudo chmod a+r /etc/apt/keyrings/docker.gpg
 -sudo docker rmi $(docker images -aq) --force	-принудительное удаление образов
 -sudo docker ps					-просмотр запущенных контейнеров
 -sudo docker ps -a				-просмотр контейнеров доступных в системе
--sudo docker run -it ubuntu bash		-it интерактивный режим запускаем bash в котнейнере 						ubuntu входим в контейнер root@a61300ca1712:/#
+-sudo docker run -it ubuntu bash		-it интерактивный режим запускаем bash в котнейнере 
+						ubuntu входим в контейнер root@a61300ca1712:/#
+-sudo docker run -it -h GeekBrains ubuntu bash	-запускаем bash в котнейнере ubuntu
+						и присваиваем ему имя GeekBrains
 -sudo docker run -it ubuntu date		-запуск времени
 -sudo docker run --publish 8080:80 nginx	-запуск nginx
 -sudo docker run --publish 8080:80 nginx -d	-запуск nginx в режиме демона(в фоне)
@@ -38,12 +41,28 @@ sudo chmod a+r /etc/apt/keyrings/docker.gpg
 						если есть доступ то работает
 -sudo docker ps -a				-просмотр контейнеров
 -sudo docker start GB(name of conteiner)	-запуск контейнера по имени 
-						(если нет никакой задачи на выполнение, то контейнер 						тут же остановится)
+						(если нет никакой задачи на выполнение, то контейнер
+						тут же остановится)
+-sudo docker exec -it c3b8ca76c133 bash		-зайти внутрь контейнера по id
 -sudo docker run ubuntu sleep 1200		-запуск задачи в контейнере
 -sudo docker rm GB(name of conteiner)		-удаление контейнера по имени
+-sudo docker rm c3b8ca76c133 			-удаление контейнера по id
 -sudo rm $(docker ps -a -q)			-удаление всех контейнеров
 -sudo docker ps -q				-вывод id толькозапущенных контейнеров
 -sudo docker ps -a -q				-вывод id всех контейнров доступных в системе
 -sudo docker stop a3jrw4kj5b23kj(id conteiner)	-остановка контейнера по его id
 -sudo docker system df				-просмотр занятогот места на диске
 -sudo docker system prune -af			-очистка места от образов
+
+***РАБОТА С КОНТЕЙНЕРАМИ***
+-mkdir linkfolder 				-создаем папку		
+-echo 123456 > test.txt				-создаем файл test.txt и добавляем туда 123456		
+-docker run -it -v ./linkfolder:/linkfolder ubuntu:22.10 bash	-линкуем созданную папку в контейнер
+-ls -l								-проверяем что папка linkfolder и все ее файлы есть внутри контейнера
+-echo 7890 >> linkfolder/test.txt		-добавляем запись в файл. файл изменится и в оригинальном расположении
+-cat test.txt					-читаем файл test.txt и убеждаемся что все работает
+
+***РАБОТА С MARIA.DB***
+-mkdir mariadb					-создаем папку для линкования
+-docker run --name test-mariadb -e MARIADB_ROOT_PASSWORD=test123 -v ./mariadb:/var/lib/mysql -d mariadb:10.10.2	-запускаем 'run mariadb', называем наш котнтейнер '--name test-mariadb', задаем пароль '-e MARIADB_ROOT_PASSWORD=test123', линкуем папку '-v ./mariadb:/var/lib/mysql', запускаем контейнре в 'detouch' бэкграундрежиме '-d mariadb:10.10.2'
+-
