@@ -9,9 +9,10 @@ git remote -v	-просмотр подключенных удаленных ре
 
 --на сайте GitHub создаем удаленный репозиторий и копируем ссылку на него
 --подключаем локальный репозиторий к удаленному
-git remote add project https://github.com/fedotoff144/NoteProject.git	-подключаем удаленный репозиторий к 
+git remote add project https://github.com/fedotoff144/NoteProject.git	-подключаем удаленный репозиторий c именем project к 
 									локальному, то есть теперь они связаны и 
 									локальные изменения будут пушиться туда
+*git remote remove project	-удалить ссылку на удаленный репозиторий с именем project
 
 --делаем локальный коммит после инициализации
 git status			-проверяем статус изменений в локальном репозитории
@@ -22,83 +23,19 @@ git push -u project master	-пушим локальные изменения в 
 
 
 ***
-git fetch			-стягиваем все удаленные изменния без слияния
+git fetch			-стягиваем но не применяем все удаленные изменния (без merge)
+*git fetch -all			-для всех подключенных удаленных репозиториев
 git log project/main main	-смотрим лог и сравниваем коммиты (и состояние HEAD) удаленного и локального репозиториев
+*git log project/main ^main	-должно быть то же самое
 git diff main project/main	-смотрим разницу кода между репозиториями
 git merge project/main		-делаем слияние удаленного репозитория с локальным
+*git merge project/main main	-мердж удаленного репозитория в мейн
 или просто не делаем мердж и на локальной ветке все остается без изменений
 
 
 *git pull origin branchname --allow-unrelated-histories -если есть несвязная история то ее можно проигнорировать
 
-
 ===============================================================
-*** перенос репоизотрия на удалееной стороне
-git remote -v	просмотр удаленных изменений
-git remote remove origin	удалить ссылку на удаленный репозиторий с именем origin
-git remote add origin https://github.com	уставновить новую ссылку на репозиторий
 
-git push -u origin main		отправка локальных изменений на удаленку
-git push -u source main
-git fetch -all
-git log
-git log origin/main ^main
-git log origin/source ^source
-git merge origin/main
-git
-
-
-git remote add source https://github.com/fedotoff144/test-repo-1.git	-source can may be with any name
-git remote -v		-просмотр
-git fetch --all		-стянуть но не применять удаленные изменния
-git log			-просмотр логов
-git log origin/main ^main	-
-git log source/main ^main	-
-git merge origin/main main	-мердж удаленного репозитория в мейн
-git merge source/main source	-мердж удаленного репозитория в оурс
 git fetch --list	-
 git fetch refuse
-
-
-  Id CommandLine
-  -- -----------
-   1 ls
-   2 cd .\Downloads\
-   3 mkdir test-repo-1
-   4 cd .\test-repo-1\
-   5 git clone https://github.com/fedotoff144/test-repo-1.git
-   6 git remote -v
-   7 ls
-   8 cd .\test-repo-1\
-   9 git remote -v
-  10 git remove origine
-  11 git remote remove origin
-  12 git remote -v
-  13 git remote add origin https://github.com/fedotoff144/test-repo-2.git
-  14 ls
-  15 git add .
-  16 git commit -m 'added readme file'
-  17 git status
-  18 cat 123 > file.txt
-  19 touch 123 > file.txt
-  20 git status
-  21 git add .
-  22 git commit -m 'add file'
-  23 git push -u main
-  24 git push
-  25 git push -u origin main
-  26 cd
-  27 cd..
-  28 cd..
-  29 cd..
-  30 cd 'C:\Users\fedotoff144\Downloads\Git advanced\'
-  31 cd .\test-repo-1\
-  32 git remote -v
-  33 git remote add source https://github.com/fedotoff144/test-repo-1.git
-  34 git remote -v
-  35 git fetch --all
-  36 git log
-  37 git log origin/main ^main
-  38 git log source/main ^main
-  39 git merge origin/main main
-  40 git merge source/main source
