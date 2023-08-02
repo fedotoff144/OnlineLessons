@@ -9,7 +9,7 @@ git remote -v	-просмотр подключенных удаленных ре
 
 --на сайте GitHub создаем удаленный репозиторий и копируем ссылку на него
 --подключаем локальный репозиторий к удаленному
-git remote add project https://github.com/fedotoff144/NoteProject.git	-подключаем удаленный репозиторий c именем project к 
+git remote add project https://github.com/fedotoff144/NoteProject.git	-подключаем удаленный репозиторий c именем 												project к 
 									локальному, то есть теперь они связаны и 
 									локальные изменения будут пушиться туда
 *git remote remove project	-удалить ссылку на удаленный репозиторий с именем project
