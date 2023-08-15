@@ -4,3 +4,11 @@
 from math import pi
 import decimal
 
+decimal.getcontext().prec = 42 # 42 знака после запятой в числе
+diam_circle = decimal.Decimal(10)
+pi_ = decimal.Decimal(pi)
+
+squere = (pi_ * diam_circle ** 2) / 4
+length = pi_ * diam_circle
+
+print(squere, length)
