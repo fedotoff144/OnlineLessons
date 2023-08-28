@@ -35,6 +35,7 @@ with(open('new_file_1.txt', 'w', encoding='utf-8')) as f:
     print(f.tell())
 # print(f.tell()) # ValueError: I/O operation on closed file.
 
+
 last = before = 0
 with(open('new_file_1.txt', 'r+', encoding='utf-8')) as f:
     while line := f.readline():
@@ -55,4 +56,9 @@ with(open('new_file_1.txt', 'r+', encoding='utf-8')) as f:
     while line:= f.readline():
         last, before = f.tell(), last
     print(f.seek(before, 0))
-    print(f.truncate())
+    print(f.truncate()) # обрезаем файл
+
+
+size = 125
+with(open('new_file_1.txt', 'r+', encoding='utf-8')) as f:
+    print(f.truncate(size)) # обрезает все полсле 125 символов
