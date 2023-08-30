@@ -1,0 +1,23 @@
+{
+  "id": 2,
+  "name": "Harry Potter",
+  "username": "snake",
+  "email": [
+    "fedotoff144@gmail.com",
+    "fedotoff144@inbox.ru"
+  ],
+  "address": {
+    "street": "Lenina",
+    "city": "Vladimir",
+    "zipcode": 601901,
+    "geo": {
+      "lat": "-43.9522",
+      "lng": "-50.5050"
+    }
+  },
+  "phone": "89109004567",
+  "company": {
+    "name": "VKU",
+    "phone": "88005552233"
+  }
+}
